@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Laboratorio 4</string>
+    <string name="header">Actualización disponible</string>
+    <string name="download">Descargar</string>
+    <string name="birthday_day">Sábado</string>
+    <string name="birthday_date">22 de enero</string>
+    <string name="jornada">Terminar jornada</string>
+    <string name="restaurant_name">Chivas Steak House</string>
+    <string name="restaurant_address">Km 39.5 Carretera al Pacífico, Palín, Escuintla</string>
+    <string name="restaurant_schedule">7:00AM 01:00PM</string>
+    <string name="main_button">Iniciar</string>
+    <string name="secondary_button">Detalles</string>
+</resources>
