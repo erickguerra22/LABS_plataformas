@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/material_dynamic_neutral_variant100"
+    >
+
+    <LinearLayout
+        android:id="@+id/layout_mainActivity_updateAvailable"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue"
+        android:orientation="horizontal"
+        android:padding="@dimen/min_distance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/start_margin"
+            android:background="@drawable/ic_round_background"
+            android:backgroundTint="@color/blue"
+            android:padding="@dimen/med_distance"
+            android:src="@drawable/ic_update"
+            app:tint="@color/white"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/start_margin"
+            android:layout_marginTop="@dimen/min_distance"
+            android:text="@string/header"
+            android:textColor="@color/black" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="@dimen/min_distance"
+            android:text="@string/download"
+            android:textAllCaps="false"
+            android:textColor="@color/blue" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/birthday_day"
+        android:layout_marginStart="@dimen/start_margin_txt"
+        android:layout_marginTop="@dimen/min_distance"
+        android:textSize="@dimen/title_1"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_mainActivity_updateAvailable" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/start_margin_txt"
+        android:paddingTop="@dimen/min_distance"
+        android:text="@string/birthday_date"
+        android:textColor="@color/black"
+        android:textSize="@dimen/subtitle_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/max_distance"
+        android:layout_marginTop="@dimen/max_distance"
+        android:text="@string/jornada"
+        android:textAllCaps="false"
+        android:textColor="@color/purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/layout_mainActivity_updateAvailable" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.24"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_mainActivity_restaurant"
+        android:layout_width="0dp"
+        android:layout_margin="@dimen/start_margin"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/guideline_separator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/white"
+        android:elevation="@dimen/max_distance"
+        >
+
+        <TextView
+            android:id="@+id/txt_restaurantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/start_margin"
+            android:layout_marginTop="@dimen/min_distance"
+            android:text="@string/restaurant_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_2"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/layout_mainActivity_restaurant"
+            app:layout_constraintBottom_toTopOf="@id/txt_restaurantAddress"
+            app:layout_constraintTop_toTopOf="@id/layout_mainActivity_restaurant"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/med_distance"
+            android:paddingEnd="@dimen/min_distance"
+            android:src="@drawable/ic_address"
+            app:layout_constraintEnd_toEndOf="@id/layout_mainActivity_restaurant"
+            app:layout_constraintTop_toTopOf="@id/layout_mainActivity_restaurant"
+            app:tint="@color/purple"
+            />
+
+        <TextView
+            android:id="@+id/txt_restaurantAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/start_margin"
+            android:layout_marginTop="@dimen/min_distance"
+            android:textSize="@dimen/subtitle_2"
+            android:text="@string/restaurant_address"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/layout_mainActivity_restaurant"
+            app:layout_constraintTop_toBottomOf="@+id/txt_restaurantName"
+            app:layout_constraintBottom_toTopOf="@id/txt_restaurantSchedule"
+            />
+
+        <TextView
+            android:id="@+id/txt_restaurantSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/start_margin"
+            android:layout_marginTop="@dimen/med_distance"
+            android:textSize="@dimen/subtitle_3"
+            android:text="@string/restaurant_schedule"
+            app:layout_constraintStart_toStartOf="@id/layout_mainActivity_restaurant"
+            app:layout_constraintTop_toBottomOf="@+id/txt_restaurantAddress" />
+
+        <Button
+            android:id="@+id/btn_mainActivity_iniciar"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/med_distance"
+            android:layout_marginTop="@dimen/med_distance"
+            android:layout_marginBottom="@dimen/min_distance"
+            android:layout_marginEnd="@dimen/min_distance"
+            android:backgroundTint="@color/orange"
+            android:text="@string/main_button"
+            app:layout_constraintBottom_toBottomOf="@id/layout_mainActivity_restaurant"
+            app:layout_constraintStart_toStartOf="@id/layout_mainActivity_restaurant"
+            app:layout_constraintTop_toBottomOf="@id/txt_restaurantSchedule"
+            app:layout_constraintEnd_toStartOf="@id/btn_mainActivity_detalles"
+            />
+
+        <Button
+            android:id="@+id/btn_mainActivity_detalles"
+            android:textAllCaps="false"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/med_distance"
+            android:layout_marginBottom="@dimen/min_distance"
+            android:layout_marginStart="@dimen/min_distance"
+            android:text="@string/secondary_button"
+            android:textColor="@color/orange"
+            app:layout_constraintBottom_toBottomOf="@id/layout_mainActivity_restaurant"
+            app:layout_constraintEnd_toEndOf="@id/layout_mainActivity_restaurant"
+            app:layout_constraintStart_toEndOf="@id/btn_mainActivity_iniciar"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

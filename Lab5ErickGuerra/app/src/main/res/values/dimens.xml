@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_1">40sp</dimen>
+    <dimen name="subtitle_1">20dp</dimen>
+    <dimen name="title_2">25sp</dimen>
+    <dimen name="subtitle_2">16sp</dimen>
+    <dimen name="start_margin">16dp</dimen>
+    <dimen name="start_margin_txt">25dp</dimen>
+    <dimen name="subtitle_3">14sp</dimen>
+    <dimen name="min_distance">5dp</dimen>
+    <dimen name="med_distance">15dp</dimen>
+    <dimen name="max_distance">55dp</dimen>
+
+</resources>
