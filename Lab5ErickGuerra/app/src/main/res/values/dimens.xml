@@ -10,5 +10,12 @@
     <dimen name="min_distance">5dp</dimen>
     <dimen name="med_distance">15dp</dimen>
     <dimen name="max_distance">55dp</dimen>
+    <dimen name="med_distance_2">30dp</dimen>
+    <dimen name="med_distance_3">40dp</dimen>
+    <dimen name="text_1">11sp</dimen>
+    <dimen name="min_distance_2">10dp</dimen>
+    <dimen name="intermediate_distance">27dp</dimen>
+    <dimen name="min_distance_3">9dp</dimen>
+    <dimen name="max_distance_2">60dp</dimen>
 
 </resources>

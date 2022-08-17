@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/material_dynamic_neutral_variant100"
+    android:background="@color/white"
     >
 
     <LinearLayout
@@ -40,6 +40,7 @@
             android:textColor="@color/black" />
 
         <Button
+            android:id="@+id/btn_mainActivity_download"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -126,16 +127,18 @@
             app:layout_constraintTop_toTopOf="@id/layout_mainActivity_restaurant"
             />
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/icon_map"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@color/white"
             android:paddingTop="@dimen/med_distance"
             android:paddingEnd="@dimen/min_distance"
             android:src="@drawable/ic_address"
             app:layout_constraintEnd_toEndOf="@id/layout_mainActivity_restaurant"
             app:layout_constraintTop_toTopOf="@id/layout_mainActivity_restaurant"
-            app:tint="@color/purple"
-            />
+            app:tint="@color/purple" />
 
         <TextView
             android:id="@+id/txt_restaurantAddress"
