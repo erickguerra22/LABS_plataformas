@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LibraryFragment"
+    android:background="@color/light_black"
+    >
+
+    <ImageView
+        android:id="@+id/img_libraryFragment_profilePic"
+        android:layout_width="@dimen/mid_image"
+        android:layout_height="@dimen/mid_image"
+        android:layout_marginStart="@dimen/img_start_distance"
+        android:layout_marginTop="@dimen/img_header_distance"
+        android:clickable="true"
+        android:src="@drawable/ic_profile_picture"
+        app:layout_constraintBottom_toBottomOf="@id/txt_fragmentLibrary_libraryHeader"
+        app:layout_constraintEnd_toStartOf="@id/txt_fragmentLibrary_libraryHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white_2" />
+
+    <TextView
+        android:id="@+id/txt_fragmentLibrary_libraryHeader"
+        android:layout_width="0dp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/start_distance"
+        android:layout_height="wrap_content"
+        android:text="@string/library_header"
+        android:textSize="@dimen/subtitle_2"
+        android:textColor="@color/white_2"
+        android:layout_marginTop="@dimen/header_distance"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_libraryFragment_profilePic"
+        app:layout_constraintEnd_toStartOf="@id/img_libraryFragment_search"
+        />
+
+    <ImageView
+        android:id="@+id/img_libraryFragment_search"
+        android:layout_width="@dimen/small_icon"
+        android:layout_height="@dimen/small_icon"
+        android:layout_marginTop="@dimen/img_header_distance"
+        android:layout_marginEnd="@dimen/between_icons"
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_search_24"
+        app:layout_constraintBottom_toBottomOf="@id/txt_fragmentLibrary_libraryHeader"
+        app:layout_constraintEnd_toStartOf="@id/img_libraryFragment_addSong"
+        app:layout_constraintStart_toEndOf="@id/txt_fragmentLibrary_libraryHeader"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white_2" />
+
+    <ImageView
+        android:id="@+id/img_libraryFragment_addSong"
+        android:layout_width="@dimen/small_icon"
+        android:layout_height="@dimen/small_icon"
+        android:layout_marginTop="@dimen/img_header_distance"
+        android:layout_marginEnd="@dimen/img_start_distance"
+        android:clickable="true"
+        android:src="@drawable/ic_add_song"
+        app:layout_constraintBottom_toBottomOf="@id/txt_fragmentLibrary_libraryHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_libraryFragment_search"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white_2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_libraryFragment_favouriteSongs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_libraryFragment_search"
+        android:background="@color/light_black_2"
+        android:layout_marginTop="@dimen/counstraint_header"
+        android:paddingHorizontal="@dimen/start_distance"
+        android:paddingTop="@dimen/start_distance"
+        android:paddingBottom="@dimen/max_size"
+        >
+
+        <ImageView
+            android:id="@+id/img_libraryFragment_sortSongs"
+            android:layout_width="@dimen/smallest_icon"
+            android:layout_height="@dimen/smallest_icon"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_swap_vert_24"
+            app:layout_constraintEnd_toStartOf="@id/txt_fragmentLibrary_mostRecent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white_2" />
+
+        <TextView
+            android:id="@+id/txt_fragmentLibrary_mostRecent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_2"
+            android:text="@string/most_recent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_libraryFragment_sortSongs"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/start_distance"
+            />
+
+        <ImageView
+            android:layout_marginTop="@dimen/mid_distance"
+            android:id="@+id/img_libraryFragment_likedSongs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_favorite_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_fragmentLibrary_mostRecent"
+            app:tint="@color/white_2"
+            android:background="@color/purple"
+            android:padding="@dimen/mid_distance"
+            />
+        <TextView
+            android:id="@+id/txt_fragmentLibrary_counterHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/img_libraryFragment_likedSongs"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/img_libraryFragment_likedSongs"
+            app:layout_constraintBottom_toTopOf="@id/txt_fragmentLibrary_counter"
+            android:text="@string/liked"
+            android:textColor="@color/white_2"
+            android:textSize="@dimen/normal_text"
+            android:layout_marginStart="@dimen/start_distance"
+            app:layout_constraintVertical_chainStyle="packed"
+            />
+        <TextView
+            android:id="@+id/txt_fragmentLibrary_counter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/txt_fragmentLibrary_counterHeader"
+            app:layout_constraintStart_toEndOf="@id/img_libraryFragment_likedSongs"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/start_distance"
+            app:layout_constraintBottom_toBottomOf="@id/img_libraryFragment_likedSongs"
+            android:textColor="@color/grey_2"
+            tools:text="775 songs"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

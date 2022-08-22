@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Title_1">35sp</dimen>
+    <dimen name="subtitle_1">23sp</dimen>
+    <dimen name="header_distance">50dp</dimen>
+    <dimen name="start_distance">15dp</dimen>
+    <dimen name="subtitle_2">25sp</dimen>
+    <dimen name="usual_dim">15dp</dimen>
+    <dimen name="marginV">7dp</dimen>
+    <dimen name="bet_layouts">7.5dp</dimen>
+    <dimen name="genres">7dp</dimen>
+    <dimen name="mid_image">45dp</dimen>
+    <dimen name="img_header_distance">50dp</dimen>
+    <dimen name="img_start_distance">20dp</dimen>
+    <dimen name="small_icon">35dp</dimen>
+    <dimen name="between_icons">20dp</dimen>
+    <dimen name="smallest_icon">20dp</dimen>
+    <dimen name="counstraint_header">27dp</dimen>
+    <dimen name="nav_height">60dp</dimen>
+    <dimen name="max_size">50dp</dimen>
+    <dimen name="mid_distance">20dp</dimen>
+    <dimen name="normal_text">17sp</dimen>
+    <dimen name="img_size">75dp</dimen>
+    <dimen name="img_top_distance">25dp</dimen>
+    <dimen name="img_strt_distance">60pt</dimen>
+</resources>

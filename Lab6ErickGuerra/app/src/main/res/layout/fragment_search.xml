@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SearchFragment"
+    android:background="@color/light_black">
+
+    <TextView
+        android:id="@+id/txt_fragmentSearch_searchHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/search"
+        android:textColor="@color/white_2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/header_distance"
+        app:layout_constraintBottom_toTopOf="@id/txt_fragmentSearch_genres"
+        android:layout_marginStart="@dimen/start_distance"
+        android:textStyle="bold"
+        android:textSize="@dimen/subtitle_2"
+        />
+
+    <TextView
+        android:id="@+id/txt_fragmentSearch_genres"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/genres"
+        android:textColor="@color/white_2"
+        app:layout_constraintTop_toBottomOf="@id/txt_fragmentSearch_searchHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="@dimen/usual_dim"
+        android:paddingBottom="@dimen/usual_dim"
+        android:layout_marginStart="@dimen/start_distance"
+        android:layout_marginTop="@dimen/usual_dim"
+        android:layout_marginBottom="20dp"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout_fragmentSearch_genre1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="@dimen/marginV"
+        android:layout_marginStart="@dimen/start_distance"
+        android:layout_marginEnd="@dimen/bet_layouts"
+        android:background="@color/red"
+        android:clickable="true"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout_fragmentSearch_genre3"
+        app:layout_constraintEnd_toStartOf="@id/linearLayout_fragmentSearch_genre2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_fragmentSearch_genres">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="@dimen/genres"
+            android:text="@string/genre1"
+            android:textColor="@color/white_2"
+            android:textSize="@dimen/usual_dim"
+            android:textStyle="bold" />
+        <ImageView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:src="@mipmap/img_rock_foreground"
+            android:layout_marginTop="@dimen/img_top_distance"
+            android:layout_marginStart="@dimen/img_strt_distance"
+            android:rotation="25"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout_fragmentSearch_genre2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="@dimen/marginV"
+        android:layout_marginStart="@dimen/bet_layouts"
+        android:layout_marginEnd="@dimen/start_distance"
+        android:background="@color/dark_orange"
+        android:clickable="true"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout_fragmentSearch_genre4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/linearLayout_fragmentSearch_genre1"
+        app:layout_constraintTop_toBottomOf="@id/txt_fragmentSearch_genres">
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/genres"
+            android:text="@string/genre2"
+            android:textColor="@color/white_2"
+            android:textSize="@dimen/usual_dim"
+            android:textStyle="bold" />
+
+        <ImageView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:src="@mipmap/img_hiphop_foreground"
+            android:layout_marginTop="@dimen/img_top_distance"
+            android:layout_marginStart="@dimen/img_strt_distance"
+            android:rotation="25"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout_fragmentSearch_genre3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="@dimen/marginV"
+        android:layout_marginStart="@dimen/start_distance"
+        android:layout_marginEnd="@dimen/bet_layouts"
+        android:background="@color/pink"
+        android:clickable="true"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/fragmentSearch_guideLine"
+        app:layout_constraintEnd_toStartOf="@id/linearLayout_fragmentSearch_genre4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_fragmentSearch_genre1">
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/genres"
+            android:text="@string/genre3"
+            android:textColor="@color/white_2"
+            android:textSize="@dimen/usual_dim"
+            android:textStyle="bold" />
+
+        <ImageView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:src="@mipmap/img_latin_foreground"
+            android:layout_marginTop="@dimen/img_top_distance"
+            android:layout_marginStart="@dimen/img_strt_distance"
+            android:rotation="25"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout_fragmentSearch_genre4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="@dimen/marginV"
+        android:layout_marginStart="@dimen/bet_layouts"
+        android:layout_marginEnd="@dimen/start_distance"
+        android:background="@color/dark_blue"
+        android:clickable="true"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/fragmentSearch_guideLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/linearLayout_fragmentSearch_genre3"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_fragmentSearch_genre2">
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/genres"
+            android:text="@string/genre4"
+            android:textColor="@color/white_2"
+            android:textSize="@dimen/usual_dim"
+            android:textStyle="bold" />
+
+        <ImageView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:src="@mipmap/img_punk_foreground"
+            android:layout_marginTop="@dimen/img_top_distance"
+            android:layout_marginStart="@dimen/img_strt_distance"
+            android:rotation="25"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fragmentSearch_guideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
