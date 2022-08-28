@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/layout_myProfileFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MyProfileFragment">
+
+    <TextView
+        android:id="@+id/txt_myProfileFragment_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/my_profile_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="@dimen/horizontal_margin"
+        android:layout_marginTop="@dimen/large_top_margin"
+        android:textStyle="bold"
+        android:textSize="@dimen/title"
+        android:textColor="@color/Grey"
+        android:textAlignment="center"
+        />
+
+    <ImageView
+        android:id="@+id/img_myProfileFragment_camera"
+        android:layout_marginTop="@dimen/mid_top_margin"
+        android:clickable="true"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_myProfileFragment_title"
+        android:src="@drawable/ic_camera"
+        app:tint="@color/white_2"
+        android:padding="@dimen/icon_padding"
+        android:background="@drawable/ic_round_background"
+        android:backgroundTint="@color/purple_600"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayout_myProfileFragment_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_myProfileFragment_camera"
+        android:layout_marginHorizontal="@dimen/horizontal_margin"
+        android:layout_marginTop="@dimen/large_top_margin"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:text="@string/test_my_profile_email"
+            android:textColor="@color/light_grey"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="@dimen/icon_text_padding"
+            android:drawableTint="@color/light_grey"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_myProfileFragment_update"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="@dimen/horizontal_margin"
+        android:backgroundTint="@color/Orange"
+        android:text="@string/btn_update"
+        android:textAllCaps="false"
+        android:layout_marginBottom="@dimen/large_bottom_margin"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

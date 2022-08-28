@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_height">57dp</dimen>
+    <dimen name="horizontal_margin">30dp</dimen>
+    <dimen name="title">30sp</dimen>
+    <dimen name="large_top_margin">30dp</dimen>
+    <dimen name="min_top_margin">10dp</dimen>
+    <dimen name="mid_top_margin">25dp</dimen>
+    <dimen name="large_bottom_margin">30dp</dimen>
+    <dimen name="icon_text_padding">10dp</dimen>
+    <dimen name="icon_padding">40dp</dimen>
+    <dimen name="icon_size">125dp</dimen>
+    <dimen name="btn_home_horizontal_margin">65dp</dimen>
+</resources>
