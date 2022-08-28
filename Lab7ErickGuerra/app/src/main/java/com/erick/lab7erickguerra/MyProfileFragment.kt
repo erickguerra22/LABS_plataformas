@@ -48,7 +48,7 @@ class MyProfileFragment : Fragment(R.layout.fragment_my_profile) {
             if(shouldShowRequestPermissionRationale(permission)){
                 Snackbar.make(
                     rootFragment,
-                    "El acceso es necesario para poder llevar a cabo la visita virtual al restaurante",
+                    "El acceso es necesario para poder agregar una fotografía de perfil.",
                     Snackbar.LENGTH_INDEFINITE
                 ).setAction("Ok"){
                     ActivityCompat.requestPermissions(requireActivity(), arrayOf(permission),0)
