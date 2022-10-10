@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Laboratorio 12</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="inputLayout_email_hint">Correo</string>
+    <string name="valid_mail">gue21781@uvg.edu.gt</string>
+    <string name="inputLayout_password_hint">Contraseña</string>
+    <string name="login_btn">Iniciar Sesión</string>
+    <string name="name">Erick Guerra</string>
+    <string name="keep_session_btn">Mantener sesión activa</string>
+    <string name="logout_btn">Cerrar sesión</string>
+    <string name="empty_btn">empty</string>
+    <string name="failure_btn">failure</string>
+    <string name="success_btn">success</string>
+    <string name="default_btn">default</string>
+    <string name="test_state_message">Selecciona una opción</string>
+</resources>
